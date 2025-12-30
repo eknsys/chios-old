@@ -1,4 +1,4 @@
-#eknsys - ChiOS
+# eknsys - ChiOS
 
 ChiOS ist ein kleines Hobby-Betriebssystem.
 Der Name "ChiOS" ist inspiriert von der Mangareihe *Chi's sweet home* und außer einer ASCII-Katze die im System Nachrichten ausgibt, die nichts mit der Mangareihe zutun hat, besteht *keine* Verbindung zum Originalwerk.
