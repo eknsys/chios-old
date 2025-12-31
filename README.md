@@ -19,3 +19,24 @@ ChiOS benötigt folgende externe Tools für den Build-Prozess:
 
 Diese Tools werden ausschließlich zum Erstellen von Boot-Images und zum Kompilieren genutzt.  
 ChiOS selbst steht unter der MIT-Lizenz und ist unabhängig von den Lizenzen der genannten Tools.
+
+## Installation
+
+ChiOS verfügt nicht über ein Setup. Zum Starten muss die *.iso Datei unter releases heruntergeladen werden. Diese muss dann bootfähig auf einen USB-Stick geschrieben werden (ChiOS liefert kein eigenes Tool dafür!).
+
+### Linux
+
+```bash
+sudo dd if=isofile.iso of=/dev/device bs=4M status=progress conv=fsync
+```
+Ersetzen Sie *isofile.iso* durch die heruntergeladene ChiOS-ISO!
+Ersetzen Sie *device* durch ihren USB-Stick!
+
+#### ⚠️ Achtung!
+*dd* überschreibt ohne Rückfrage gesamte Geräte. Stellen Sie sicher, dass das ausgewählte Gerät wirklich ihr USB-Stick ist (überprüfen Sie es mit z.b. lsblk). *dd* würde auch das Systemlaufwerk überschreiben.
+
+Alternativ können Sie auch Tools wie z.B. [balenaEtcher](https://etcher.balena.io/) verwenden.
+
+### Windows
+
+Verwenden Sie Tools wie z.B. [balenaEtcher](https://etcher.balena.io/) oder [Rufus](https://rufus.ie/de/).
